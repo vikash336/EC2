@@ -11,6 +11,12 @@ pipeline {
               sh 'python3 hello.py'
             }
         }
+
+        stage('Docker') {
+            steps {
+              sh 'docker -v'
+            }
+        }
     }
 }
 
